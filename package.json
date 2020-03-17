@@ -2,9 +2,8 @@
   "name": "tic-tac-toe",
   "version": "1.0.0",
   "description": "This is a practicing project for using TDD in a react application. The project is created with webpack, react and typescript with jest and react testing-library.",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
@@ -19,6 +18,24 @@
     "url": "https://github.com/aidamorinashala/tic-tac-toe-react-tdd/issues"
   },
   "homepage": "https://github.com/aidamorinashala/tic-tac-toe-react-tdd#readme",
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx",
+      "ts",
+      "tsx",
+      "json",
+      "node"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "bower_components",
+      "shared"
+    ]
+  },
   "devDependencies": {
     "@types/jest": "^25.1.4",
     "@types/node": "^13.9.1",
