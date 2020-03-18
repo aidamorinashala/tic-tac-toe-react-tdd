@@ -1,8 +1,20 @@
 import React from 'react';
-import { Hello } from './components/Hello';
+import { Header } from './components/Header';
+import styled from 'styled-components';
+
+const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+`;
 
 function App() {
-  return <Hello compiler="Typescript" framework="React" />;
+  return (
+    <Main>
+      <Header title="TIC TAC TOE" />
+    </Main>
+  );
 }
 
 export default App;
