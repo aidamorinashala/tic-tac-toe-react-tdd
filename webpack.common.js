@@ -16,16 +16,20 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: ['file-loader']
-      },
-      {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.(png|jpg|gif)$/i,
-        use: 'url-loader'
+        test: /\.(png|jpg|gif|woff|woff2|ttf|otf|svg)$/i,
+        use: ['url-loader']
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: ['file-loader']
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ['file-loader']
       }
     ]
   },
